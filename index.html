@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--Informs the browser that this is an HTML5 document. It ensures the browser renders the page correctly using the latest standards.-->
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+     <nav>
+          <ul>
+               <li><a href="#about">About</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>
+          </ul>
+     </nav>
+    <h1>Welcome to My Portfolio</h1>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+      <p>This is where I'll write about myself.</p>
+    </section>
+    <section id="projects">
+          <h2>Projects</h2>
+          <div class="project">
+               <h3>Project 1</h3>
+               <p><i class="fas fa-code"></i> A simple web application built with HTML and CSS.</p>
+               <button class="view-details" data-project="1">View Details</button>
+          </div>
+          <div class="project">
+               <h3>Project 2</h3>
+               <p><i class="fas fa-database"></i> A database-driven project using Python.</p>
+               <button class="view-details" data-project="2">View Details</button>
+          </div>
+          </section>
+
+          <!-- Modal -->
+          <div id="modal" class="modal">
+               <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modal-text"></p>
+               </div>
+          </div>
+     </section>
+     <section id="contact">
+          <h2>Contact</h2>
+          <form action="#" method="post">
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name" required>
+               
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+               
+               <label for="message">Message:</label>
+               <textarea id="message" name="message" rows="5" required></textarea>
+               
+               <button type="submit">Send Message</button>
+          </form>
+     </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+<button id="scroll-to-top" class="scroll-to-top">⬆</button>
+</html>
